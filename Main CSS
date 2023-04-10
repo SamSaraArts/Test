@@ -1,0 +1,98 @@
+@import url(<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>);
+/* Universal reset */
+*,
+* :before,
+* :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Raleway', sans-serif
+}
+nav {
+        background-color: blueviolet;
+        padding: 1rem;
+    }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+main {
+    max-width: 850px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* ========Specfic Styles======== */
+
+/* home page styles */
+    #Home article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+/* end home page styles */
+
+/* about page styles */
+    #About article {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+/* end about page styles */
+
+/* Art page styles */
+#Art article {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* =========end Specific Styles========== */
+
+/* media queries */
+    @media only screen and (max-width:450px) {
+        #About article
+        flex-direction: column;
+
+    }
